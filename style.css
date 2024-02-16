@@ -62,3 +62,14 @@ nav ul li:hover::after {
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.25);
 }
+
+.section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.section.animation {
+  opacity: 1;
+  transform: translateY(0);
+}
